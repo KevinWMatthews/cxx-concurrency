@@ -14,4 +14,4 @@ title: Setup
 This repo is designed for an out-of-tree build. This makes it easier to switch
 between compilers should this be required.
 
-First, create the directory structure and clone the repository:
+TODO

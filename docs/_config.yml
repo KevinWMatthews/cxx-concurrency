@@ -1,0 +1,11 @@
+# theme: minima
+remote_theme: KevinWMatthews/minima
+title: cxx/concurrency
+author: Kevin W Matthews
+author_url: https://www.kevinwmatthews.com
+description:
+  Concurrency in C++
+header_pages:
+  - setup.md
+github_username: KevinWMatthews
+linkedin_username: KevinWMatthews

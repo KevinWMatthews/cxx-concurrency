@@ -10,6 +10,9 @@ void function(int param)
 
 int main(void)
 {
-    function(42);
+    int arg = 42;
+    std::thread thread_handle {function, arg};
+    thread_handle.join();
+
     return 0;
 }

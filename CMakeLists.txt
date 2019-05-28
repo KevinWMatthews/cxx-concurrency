@@ -55,5 +55,5 @@ find_package(Threads)
 set(CMAKE_THREAD_PREFER_PTHREAD ON)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 
-add_executable(cxx_threads main.cpp)
+add_executable(cxx_threads threads.cpp)
 target_link_libraries(cxx_threads PRIVATE Threads::Threads)

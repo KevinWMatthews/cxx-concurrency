@@ -68,5 +68,5 @@ else()
     message(WARNING "C++ standard ${CMAKE_CXX_STANDARD} is too old to build scoped locks")
 endif()
 
-add_executable(future_promise future_promise.cpp)
-target_link_libraries(future_promise PRIVATE Threads::Threads)
+add_executable(futures_promises futures_promises.cpp)
+target_link_libraries(futures_promises PRIVATE Threads::Threads)

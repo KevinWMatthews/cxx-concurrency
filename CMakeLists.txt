@@ -76,6 +76,9 @@ target_link_libraries(shared_mutexes PRIVATE Threads::Threads)
 add_executable(unique_locks unique_locks.cpp)
 target_link_libraries(unique_locks PRIVATE Threads::Threads)
 
+add_executable(shared_locks shared_locks.cpp)
+target_link_libraries(shared_locks PRIVATE Threads::Threads)
+
 if(USE_CXX_STANDARD_17)
     add_executable(scoped_locks scoped_locks.cpp)
     target_link_libraries(scoped_locks PRIVATE Threads::Threads)

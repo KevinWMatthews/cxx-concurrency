@@ -70,6 +70,9 @@ target_link_libraries(thread_arguments PRIVATE Threads::Threads)
 add_executable(mutexes mutexes.cpp)
 target_link_libraries(mutexes PRIVATE Threads::Threads)
 
+add_executable(shared_mutexes shared_mutexes.cpp)
+target_link_libraries(shared_mutexes PRIVATE Threads::Threads)
+
 add_executable(unique_locks unique_locks.cpp)
 target_link_libraries(unique_locks PRIVATE Threads::Threads)
 

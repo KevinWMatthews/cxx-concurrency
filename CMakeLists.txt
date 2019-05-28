@@ -61,6 +61,9 @@ target_link_libraries(threads PRIVATE Threads::Threads)
 add_executable(data_race data_race.cpp)
 target_link_libraries(data_race PRIVATE Threads::Threads)
 
+add_executable(api_race api_race.cpp)
+target_link_libraries(api_race PRIVATE Threads::Threads)
+
 add_executable(thread_arguments thread_arguments.cpp)
 target_link_libraries(thread_arguments PRIVATE Threads::Threads)
 

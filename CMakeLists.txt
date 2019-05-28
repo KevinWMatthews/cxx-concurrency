@@ -59,11 +59,11 @@ add_executable(cxx_threads threads.cpp)
 target_link_libraries(cxx_threads PRIVATE Threads::Threads)
 
 add_executable(cxx_thread_arguments thread_arguments.cpp)
-target_link_libraries(cxx_threads PRIVATE Threads::Threads)
+target_link_libraries(cxx_thread_arguments PRIVATE Threads::Threads)
 
 if(USE_CXX_STANDARD_17)
     add_executable(cxx_scoped_locks scoped_locks.cpp)
-    target_link_libraries(cxx_threads PRIVATE Threads::Threads)
+    target_link_libraries(cxx_scoped_locks PRIVATE Threads::Threads)
 else()
     message(WARNING "C++ standard ${CMAKE_CXX_STANDARD} is too old to build scoped locks")
 endif()

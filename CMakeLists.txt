@@ -43,8 +43,8 @@ set(CMAKE_STANDARD_REQUIRED TRUE)
 
 if(ENABLE_TSAN)
     set_property(CACHE CMAKE_BUILD_TYPE PROPERTY VALUE "Debug")
-    add_compile_options("-fsanitize=address" "-fno-omit-frame-pointer" "-O2")
-    link_libraries("-fsanitize=address")
+    add_compile_options("-fsanitize=thread" "-O2")
+    link_libraries("-fsanitize=thread")
 endif()
 
 #TODO Revisit this

@@ -6,3 +6,6 @@ target_link_libraries(thread_with_argument PRIVATE Threads::Threads)
 
 add_executable(thread_with_function_object thread_with_function_object.cpp)
 target_link_libraries(thread_with_function_object PRIVATE Threads::Threads)
+
+add_executable(thread_with_lambda thread_with_lambda.cpp)
+target_link_libraries(thread_with_lambda PRIVATE Threads::Threads)

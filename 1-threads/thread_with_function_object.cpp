@@ -10,7 +10,7 @@ struct FunctionObject
 
 void FunctionObject::operator()()
 {
-    std::cout << "In function object\n";
+    std::cout << "In function object operator()\n";
 }
 
 int main(void)

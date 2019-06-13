@@ -70,20 +70,21 @@ target_link_libraries(thread_arguments PRIVATE Threads::Threads)
 add_executable(mutexes mutexes.cpp)
 target_link_libraries(mutexes PRIVATE Threads::Threads)
 
-add_executable(shared_mutexes shared_mutexes.cpp)
-target_link_libraries(shared_mutexes PRIVATE Threads::Threads)
-
 add_executable(unique_locks unique_locks.cpp)
 target_link_libraries(unique_locks PRIVATE Threads::Threads)
 
-add_executable(shared_locks shared_locks.cpp)
-target_link_libraries(shared_locks PRIVATE Threads::Threads)
 
 if(USE_CXX_STANDARD_17)
     add_executable(scoped_locks scoped_locks.cpp)
     target_link_libraries(scoped_locks PRIVATE Threads::Threads)
+
+    add_executable(shared_mutexes shared_mutexes.cpp)
+    target_link_libraries(shared_mutexes PRIVATE Threads::Threads)
+
+    add_executable(shared_locks shared_locks.cpp)
+    target_link_libraries(shared_locks PRIVATE Threads::Threads)
 else()
-    message(WARNING "C++ standard ${CMAKE_CXX_STANDARD} is too old to build scoped locks")
+    message(WARNING "C++${CMAKE_CXX_STANDARD} is too old to build shared mutexes, shared locks, and scoped locks")
 endif()
 
 add_executable(futures_promises futures_promises.cpp)

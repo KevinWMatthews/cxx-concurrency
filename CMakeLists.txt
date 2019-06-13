@@ -55,17 +55,13 @@ find_package(Threads)
 set(CMAKE_THREAD_PREFER_PTHREAD ON)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 
-add_executable(threads threads.cpp)
-target_link_libraries(threads PRIVATE Threads::Threads)
+add_subdirectory("1-threads")
 
 add_executable(data_race data_race.cpp)
 target_link_libraries(data_race PRIVATE Threads::Threads)
 
 add_executable(api_race api_race.cpp)
 target_link_libraries(api_race PRIVATE Threads::Threads)
-
-add_executable(thread_arguments thread_arguments.cpp)
-target_link_libraries(thread_arguments PRIVATE Threads::Threads)
 
 add_executable(mutexes mutexes.cpp)
 target_link_libraries(mutexes PRIVATE Threads::Threads)

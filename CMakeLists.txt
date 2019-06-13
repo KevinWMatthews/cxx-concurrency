@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(cxx_threads VERSION 0.1.0)
+project(cxx_concurrency VERSION 0.1.0)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 

@@ -18,9 +18,7 @@ int main(void)
 {
     std::cout << "Entering main\n";
 
-    //TODO how to initialize this?
-    auto callable_object = CallableObject();
-    // CallableObject callable_object {};
+    CallableObject callable_object {};
 
     std::thread a_thread { callable_object };
     a_thread.join();

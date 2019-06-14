@@ -11,7 +11,7 @@ public:
 
 void CallableObject::operator()()
 {
-    std::cout << "In class operator()\n";
+    std::cout << "In the class operator()\n";
 }
 
 int main(void)

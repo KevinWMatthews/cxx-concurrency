@@ -10,7 +10,7 @@ struct CallableObject
 
 void CallableObject::operator()()
 {
-    std::cout << "In struct operator()\n";
+    std::cout << "In the struct operator()\n";
 }
 
 int main(void)

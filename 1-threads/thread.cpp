@@ -5,7 +5,7 @@
 
 void function()
 {
-    std::cout << "In function\n";
+    std::cout << "In the function\n";
 }
 
 int main(void)

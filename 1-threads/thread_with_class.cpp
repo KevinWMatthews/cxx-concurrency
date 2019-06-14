@@ -16,6 +16,8 @@ void CallableObject::operator()()
 
 int main(void)
 {
+    std::cout << "Entering main\n";
+
     //TODO how to initialize this?
     auto callable_object = CallableObject();
     // CallableObject callable_object {};
@@ -23,5 +25,6 @@ int main(void)
     std::thread a_thread { callable_object };
     a_thread.join();
 
+    std::cout << "Exiting main\n";
     return 0;
 }

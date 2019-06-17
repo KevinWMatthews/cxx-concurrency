@@ -1,6 +1,6 @@
 # Concurrency in C++
 
-Introduction to C++ standard library features for multi-threading. Supporting content for this blog post.
+Introduction to C++ standard library features for multi-threading. Supporting content for [this blog post](https://blog.kevinwmatthews.com/concurrency-in-cxx-std-thread/).
 
 ## Background
 

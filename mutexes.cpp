@@ -5,12 +5,12 @@
 #include <mutex>
 #include <iostream>
 
-int shared_data;
 std::mutex shared_data_mutex;
+int shared_data;
 
 void function()
 {
-    // Blocks if the mutex is unavailable! Can lead to deadlock.
+    // If the mutex is unavailable, this blocks forever! This is a deadlock.
     shared_data_mutex.lock();
     shared_data += 1;
     shared_data_mutex.unlock();

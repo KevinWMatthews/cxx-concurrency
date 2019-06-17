@@ -4,6 +4,9 @@ target_link_libraries(thread PRIVATE Threads::Threads)
 add_executable(thread_with_argument thread_with_argument.cpp)
 target_link_libraries(thread_with_argument PRIVATE Threads::Threads)
 
+add_executable(thread_with_multiple_arguments thread_with_multiple_arguments.cpp)
+target_link_libraries(thread_with_multiple_arguments PRIVATE Threads::Threads)
+
 add_executable(thread_with_class thread_with_class.cpp)
 target_link_libraries(thread_with_class PRIVATE Threads::Threads)
 

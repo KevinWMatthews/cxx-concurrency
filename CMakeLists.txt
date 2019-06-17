@@ -56,32 +56,3 @@ set(CMAKE_THREAD_PREFER_PTHREAD ON)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 
 add_subdirectory("1-threads")
-
-add_executable(data_race data_race.cpp)
-target_link_libraries(data_race PRIVATE Threads::Threads)
-
-add_executable(api_race api_race.cpp)
-target_link_libraries(api_race PRIVATE Threads::Threads)
-
-add_executable(mutexes mutexes.cpp)
-target_link_libraries(mutexes PRIVATE Threads::Threads)
-
-add_executable(unique_locks unique_locks.cpp)
-target_link_libraries(unique_locks PRIVATE Threads::Threads)
-
-
-if(USE_CXX_STANDARD_17)
-    add_executable(scoped_locks scoped_locks.cpp)
-    target_link_libraries(scoped_locks PRIVATE Threads::Threads)
-
-    add_executable(shared_mutexes shared_mutexes.cpp)
-    target_link_libraries(shared_mutexes PRIVATE Threads::Threads)
-
-    add_executable(shared_locks shared_locks.cpp)
-    target_link_libraries(shared_locks PRIVATE Threads::Threads)
-else()
-    message(WARNING "C++${CMAKE_CXX_STANDARD} is too old to build shared mutexes, shared locks, and scoped locks")
-endif()
-
-add_executable(futures_promises futures_promises.cpp)
-target_link_libraries(futures_promises PRIVATE Threads::Threads)

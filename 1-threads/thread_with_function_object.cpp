@@ -11,13 +11,9 @@ void function()
 
 int main(void)
 {
-    std::cout << "Entering main\n";
-
     std::function<void()> callable_object = function;
-
     std::thread a_thread { callable_object };
     a_thread.join();
 
-    std::cout << "Exiting main\n";
     return 0;
 }

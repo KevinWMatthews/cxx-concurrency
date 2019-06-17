@@ -10,11 +10,8 @@ void function()
 
 int main(void)
 {
-    std::cout << "Entering main\n";
-
     std::thread thread_handle { function };
     thread_handle.join();
 
-    std::cout << "Exiting main\n";
     return 0;
 }

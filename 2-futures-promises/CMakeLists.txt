@@ -1,0 +1,2 @@
+add_executable(futures_and_promises futures_and_promises.cpp)
+target_link_libraries(futures_and_promises PRIVATE Threads::Threads)

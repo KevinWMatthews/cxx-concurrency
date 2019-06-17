@@ -56,3 +56,4 @@ set(CMAKE_THREAD_PREFER_PTHREAD ON)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 
 add_subdirectory("1-threads")
+add_subdirectory("2-futures-promises")

@@ -1,6 +1,6 @@
 # Concurrency in C++
 
-Introduction to C++ standard library features for multi-threading.
+Introduction to C++ standard library features for multi-threading. Supporting content for this blog post.
 
 ## Background
 
@@ -10,7 +10,7 @@ show how the Thread Sanitizer can be used to debug race conditions at runtime.
 ## Prerequesites
 
   * C++ compiler (C++11 or newer)
-  * CMake (TODO or newer)
+  * CMake (v3.1 or newer)
   * POSIX threading library
 
 ## Getting Started

@@ -10,7 +10,7 @@ Introduction to C++ standard library features for multi-threading.
 ### Language Support
 
 C++'s support for concurrency has evolved over time. The language largely predates
-multi-threaded system, so older language specs have no built-in support.
+multi-threaded systems, so older language specs have no built-in support.
 Most concurrency support was added in C++11. C++14 and C++17 refine these features.
 
 A timeline is roughly:

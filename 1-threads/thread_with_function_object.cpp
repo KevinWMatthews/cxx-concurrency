@@ -11,7 +11,7 @@ void function()
 
 int main(void)
 {
-    std::function<void()> callable_object = function;
+    std::function<void()> callable_object {function};
     std::thread a_thread { callable_object };
     a_thread.join();
 

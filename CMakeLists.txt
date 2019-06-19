@@ -59,3 +59,4 @@ add_compile_options("-Wall" "-Wpedantic")
 
 add_subdirectory("1-threads")
 add_subdirectory("2-futures-promises")
+add_subdirectory("3-packaged-tasks")

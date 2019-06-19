@@ -1,2 +1,5 @@
 add_executable(packaged_task packaged_task.cpp)
 target_link_libraries(packaged_task PRIVATE Threads::Threads)
+
+add_executable(packaged_task_with_argument packaged_task_with_argument.cpp)
+target_link_libraries(packaged_task_with_argument PRIVATE Threads::Threads)

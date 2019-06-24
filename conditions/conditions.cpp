@@ -16,7 +16,7 @@ void producer_task()
         std::this_thread::sleep_for(std::chrono::seconds(1));
         std::cout << __func__ << ": Setting data\n";
         std::scoped_lock lock {data_mutex};
-        data ^= data;
+        data ^= 1;
         data_ready = true;
         data_condition.notify_one();
     }

@@ -13,8 +13,11 @@ void producer_task()
 {
     while (true)
     {
+        std::cout << __func__ << ": Sleeping" << std::endl;
+        std::cout.flush();
         std::this_thread::sleep_for(std::chrono::seconds(1));
-        std::cout << __func__ << ": Setting data\n";
+        std::cout.flush();
+        std::cout << __func__ << ": Setting data" << std::endl;
         std::scoped_lock lock {data_mutex};
         data ^= 1;
         data_ready = true;

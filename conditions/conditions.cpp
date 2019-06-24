@@ -9,9 +9,21 @@ void producer_task()
     }
 }
 
+void consumer_task()
+{
+    while (true)
+    {
+        ;
+    }
+}
+
 int main(void)
 {
     std::thread producer {producer_task};
+    std::thread consumer {consumer_task};
+
     producer.join();
+    consumer.join();
+
     return 0;
 }

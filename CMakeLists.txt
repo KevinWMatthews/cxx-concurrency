@@ -47,8 +47,6 @@ if(ENABLE_TSAN)
     link_libraries("-fsanitize=thread")
 endif()
 
-#TODO Revisit this
-# Is it reasonable to make a container that doesn't have pthreads?
 # See: https://cmake.org/cmake/help/v3.5/module/FindThreads.html
 find_package(Threads)
 # Just to be sure

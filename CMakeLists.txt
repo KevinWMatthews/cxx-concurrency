@@ -57,7 +57,7 @@ set(THREADS_PREFER_PTHREAD_FLAG ON)
 
 add_compile_options("-Wall" "-Wpedantic")
 
-add_subdirectory("threads")
+add_subdirectory("thread-syntax")
 add_subdirectory("futures-promises")
 add_subdirectory("packaged-tasks")
 add_subdirectory("conditions")

@@ -1,2 +1,6 @@
-add_executable(conditions conditions.cpp)
-target_link_libraries(conditions PRIVATE Threads::Threads)
+if (USE_CXX_STANDARD_17)
+    add_executable(conditions conditions.cpp)
+    target_link_libraries(conditions PRIVATE Threads::Threads)
+else()
+    message(WARNING "Not building example: 'conditions'. Standard C++${CMAKE_CXX_STANDARD} is too old.")
+endif()

@@ -5,7 +5,7 @@ endif()
 
 try_compile(HAS_CXX_CONDITIONS
     "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}"
-    SOURCES "${PROJECT_SOURCE_DIR}/cmake/check_condition_variable.cpp"
+    SOURCES "${PROJECT_SOURCE_DIR}/cmake/check_scoped_lock.cpp"
     CXX_STANDARD ${USE_CXX_STANDARD}
     CXX_STANDARD_REQUIRED TRUE
     CXX_EXTENSIONS OFF

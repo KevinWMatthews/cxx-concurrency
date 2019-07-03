@@ -40,9 +40,7 @@ I attempt to distinguish between data races and API races as referred to [by Goo
 ## Requirements
 
   * Compiler that supports C++11 or newer
-  * A corresponding version of CMake
-    - For C++11 and C++14, v3.1 or newer
-    - For C++17, v3.8 or newer
+  * CMake v3.8 or newer
   * POSIX threading library (pthread)
 
 ## Getting Started

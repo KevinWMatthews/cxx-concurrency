@@ -15,7 +15,7 @@ for details.
 ## Prerequesites
 
   * C++ compiler (C++11 or newer)
-  * CMake (v3.1 or newer)
+  * CMake (v3.8 or newer)
   * POSIX threading library
 
 

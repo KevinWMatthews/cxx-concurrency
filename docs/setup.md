@@ -5,10 +5,8 @@ title: Setup
 
 ## Prerequisites
 
-  * Compiler that supports C++11 or newer (gcc, clang, etc)
-  * A corresponding version of CMake
-    - For C++11 and C++14, v3.1 or newer
-    - For C++17, v3.8 or newer
+  * Compiler that supports C++11 or newer
+  * CMake v3.8 or newer
   * POSIX threading library (pthread)
 
 ## Setup
@@ -44,7 +42,7 @@ $ make
 The project has several build options:
 
   * `USE_CXX_STANDARD`
-    - Set the C++ standard. Allowed values are: `98`,`11`, `14`, `17`
+    - Set the C++ standard. Allowed values are: `98`,`11`, `14`, `17`, `20`
   * `ENABLE_TSAN`
     - Enable the thread sanitizer. Allowed values are: `ON`, `OFF`
 

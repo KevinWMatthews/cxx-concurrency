@@ -37,12 +37,6 @@ executions!
 
 I attempt to distinguish between data races and API races as referred to [by Google](https://youtu.be/s5PCh_FaMfM).
 
-## Requirements
-
-  * Compiler that supports C++11 or newer
-  * CMake v3.8 or newer
-  * POSIX threading library (pthread)
-
 ## Getting Started
 
 See [Setup](setup.md).
